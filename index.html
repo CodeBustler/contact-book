@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Contact Book
+        <img
+          src="https://i.ibb.co/x50wtLw/pngwing-com.png"
+          alt=""
+          width="34px"
+        />
+      </h1>
+    </header>
+    <main class="container">
+      <!-- ADD CONTACTS -->
+      <div class="add-container">
+        <label for="name">Add New Contact</label>
+        <div class="addInputs">
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter Contact Name"
+            required
+          />
+          <input
+            type="text"
+            id="number"
+            placeholder="Enter Contact Number"
+            maxlength="10"
+            required
+          />
+        </div>
+        <button type="submit" id="addContact" onclick="addContact()">
+          Submit
+        </button>
+        <p id="displayNoti"></p>
+      </div>
+
+      <!-- GET CONTACTS -->
+      <div class="get-container">
+        <label for="getContact">Get Contact Details</label>
+        <div class="getInputs">
+          <input
+            type="text"
+            id="getContactName"
+            placeholder="Contact Name"
+            required
+          />
+          <button type="submit" id="getContact" onclick="getContact()">
+            Get Detail
+          </button>
+        </div>
+        <p id="displayContact"></p>
+        <div class="reset" onclick="reset()">Reset</div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <a href="https://www.instagram.com/codebustler">By CodeBustler</a>
+    </footer>
+  </body>
+</html>
